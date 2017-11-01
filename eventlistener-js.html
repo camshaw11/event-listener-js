@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Event listener</title>
+</head>
+<style>
+	h1 {
+		text-align: center;
+		color: lightgreen;
+		font-family: sans-serif;
+		margin-top: 100px;
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+</style>
+<body>
+	<h1 id="header"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nemo sequi officiis iste minima, dolore placeat similique voluptate dicta ab voluptatibus consectetur et libero quo optio sunt illo. Voluptates distinctio incidunt, vitae, commodi veniam inventore excepturi placeat exercitationem. Quas nulla magnam odit nesciunt quo laborum consectetur non molestiae, velit illo, perferendis cumque dolorum! In quas, veniam? Distinctio neque porro tenetur quod qui. Aperiam repellat doloremque distinctio soluta atque laborum beatae. Esse ex dolor minus, dolore pariatur quae odit quam dolorem. 
+	</h1>
+
+	<h1 id="header2"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nemo sequi officiis iste minima, dolore placeat similique voluptate dicta ab voluptatibus consectetur et libero quo optio sunt illo. Voluptates distinctio incidunt, vitae, commodi veniam inventore excepturi placeat exercitationem. Quas nulla magnam odit nesciunt quo laborum consectetur non molestiae, velit illo, perferendis cumque dolorum! In quas, veniam? Distinctio neque porro tenetur quod qui. Aperiam repellat doloremque distinctio soluta atque laborum beatae. Esse ex dolor minus, dolore pariatur quae odit quam dolorem. 
+	</h1>
+<script>
+
+	(function(){ // self invoking function
+
+		function colorChange() {	
+			el.style.color = '#22313F'; // dig down and style the colour of the element
+		}
+
+		function colorChange2() {
+			el.style.color = '#67809F'; // dig down and style the colour of the element
+		}
+
+		var el = document.getElementById('header');
+		el.addEventListener('mouseover', colorChange, false);
+		el.addEventListener('mouseleave', colorChange2, false);
+		
+		console.dir(el);
+
+	})();
+
+
+
+</script>
+</body>
+</html>
